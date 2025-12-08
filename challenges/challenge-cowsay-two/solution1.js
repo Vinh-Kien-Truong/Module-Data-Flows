@@ -18,13 +18,17 @@ let saying = '';
 
 function cowsay(saying) {
 // how will you make the speech bubble contain the text?
-
 // where will the cow picture go?
-
 // how will you account for the parameter being empty?
 
+    saying = saying || "moo";
+    let length = saying.length;
+    let bubble = ` ${topLine.repeat(length + 2)} \n< ${saying} >\n ${bottomLine.repeat(length + 2)} \n        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )\\/\\\n                ||----w |\n                ||     ||`;
+
+    return bubble;  
 }
 
 //4. Pipe argument into cowsay function and return a cow
 
 // how will you log this to the console?
+console.log(cowsay('Hello, World!'));

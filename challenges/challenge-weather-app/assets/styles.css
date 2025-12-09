@@ -57,6 +57,7 @@
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 3px;
+  pointer-events: none;
 }
 
 .photo__dummy,
@@ -124,7 +125,6 @@
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-
 
 /* Credits
 ------------------------------------------------------------------------------*/

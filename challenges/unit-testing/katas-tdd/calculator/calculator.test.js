@@ -9,3 +9,15 @@ test("returns number if single number is passed", function () {
 test("returns sum if two numbers are passed", function () {
   expect(add("3,6")).toBe(9);
 });
+
+test("returns sum if multiple numbers are passed", function () {
+  expect(add("1,2,3,4,5")).toBe(15);
+});
+
+test("returns sum if num over 1000", function () {
+  expect(add("2,1001")).toBe(2);
+});
+
+test("returns sum if negative numbers are passed", function () {
+  expect(add("-2,3,-4")).toBe(-3);
+});

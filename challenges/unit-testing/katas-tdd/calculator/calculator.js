@@ -6,7 +6,4 @@ function add(number) {
   return num.reduce((oldNum, currNum) => oldNum + currNum, 0);
 }
 
-console.log(add(""));
-console.log(add("5"));
-console.log(add("3,6"));
 module.exports = { add };

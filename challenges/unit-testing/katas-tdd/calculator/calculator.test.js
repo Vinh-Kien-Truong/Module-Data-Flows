@@ -19,5 +19,5 @@ test("returns sum if num over 1000", function () {
 });
 
 test("returns sum if negative numbers are passed", function () {
-  expect(add("-2,3,-4")).toBe(-3);
+  expect(() => add("2,-4,3,-5")).toThrow("negatives not allowed: -4,-5");
 });

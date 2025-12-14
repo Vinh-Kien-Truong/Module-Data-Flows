@@ -17,3 +17,11 @@ test("returns Password rejected for password without uppercase letters", functio
 test("returns Password accepted for password with at least one uppercase letter", function () {
   expect(verify("Ab1!efgh")).toBe("Password accepted");
 });
+
+test("returns Password rejected for password without numbers", function () {
+  expect(verify("Abc!efgh")).toBe("Password rejected");
+});
+
+test("returns Password accepted for password with at least one number", function () {
+  expect(verify("Ab1!efgh")).toBe("Password accepted");
+});

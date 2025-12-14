@@ -4,9 +4,15 @@ You will be writing tests and implementing some verifications inside a function 
 - If the password is less than 8 characters, the 'verify' function should return 'Password rejected'.
 If the password does not have at least 1 uppercase letter, the 'verify' function should return 'Password rejected'. The requirements from steps 1 & 2 remain the same.
 
+If the password does not have at least 1 number, the 'verify' function should return 'Password rejected'. The requirements from steps 1, 2 & 3 remain the same.
 */
 function verify(password) {
-  if (password.length < 8 || !password || !/[A-Z]/.test(password)) {
+  if (
+    password.length < 8 ||
+    !password ||
+    !/[A-Z]/.test(password) ||
+    !/[0-9]/.test(password)
+  ) {
     return "Password rejected";
   }
   return "Password accepted";

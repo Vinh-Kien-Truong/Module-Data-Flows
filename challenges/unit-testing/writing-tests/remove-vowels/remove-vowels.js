@@ -4,6 +4,7 @@ function removeVowels(word) {
   let result = [];
 
   characters.forEach(function (character) {
+    //there is a mistake here where u don't check the uppercase vowels
     let charCheck = character.toLowerCase();
     if (
       charCheck !== "a" &&
